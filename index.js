@@ -17,3 +17,13 @@ function onlyEvenValues(arr) {
   return arrayOfEven
 }
 console.log(onlyEvenValues([5, 1, 2, 3, 10]));
+
+// EX 3
+
+function showFirstAndLast(arr) {
+  const arrayOfTheTwo = []
+  arrayOfTheTwo.push(arr[0])
+  arrayOfTheTwo.push((arr[arr.length - 1]))
+  return arrayOfTheTwo
+}
+console.log(showFirstAndLast(['hi', 'goodbye', 'smile']));
