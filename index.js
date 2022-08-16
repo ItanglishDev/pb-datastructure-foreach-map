@@ -27,3 +27,38 @@ function showFirstAndLast(arr) {
   return arrayOfTheTwo
 }
 console.log(showFirstAndLast(['hi', 'goodbye', 'smile']));
+
+// EX 4
+
+// function arrayOfObjects(arr, add, value) {
+//   const newArray = arr.map(obj => {
+//     { obj, obj.add = value }
+//   } return newArray)
+
+// }
+
+// console.log(arrayOfObjects([{ name: 'Elie' }, { name: 'Tim' }, { name: 'Matt' }, { name: 'Colt' }], 'title', 'instructor'));
+
+// [{name: 'Elie', title:'instructor'}, {name: 'Tim', title:'instructor'}, {name: 'Matt', title:'instructor'}, {name: 'Colt', title:'instructor'}]
+
+// Ex 5
+
+function vowelCount(string) {
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  let obj = {}
+  let newString = string.toLowerCase()
+  let countThem = vowels.length
+  for (let i = 0; i < countThem; i++) {
+    counter = 0
+    for (let j = 0; j < newString.length; j++) {
+      if (vowels[i] === (newString[j])) {
+        counter++
+      }
+    }
+
+    if (counter > 0) { obj[vowels[i]] = counter }
+  }
+  return obj
+}
+
+console.log(vowelCount("Elie"));
